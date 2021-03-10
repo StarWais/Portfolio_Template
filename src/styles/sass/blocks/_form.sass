@@ -1,0 +1,72 @@
+.formsection
+    margin-top: 120px
+    padding-bottom: 90px
+    .container
+        padding: 0px 50px 0px 50px
+    &__btn
+        width: 219px;
+        margin-top: auto
+    &__content
+        display: flex
+        justify-content: space-between
+    &__subtitle
+        position: relative
+        +contacts_circle
+        padding-left: 12px
+        margin-bottom: 7px
+    &__wrapper
+        display: flex
+        flex-direction: column
+    .line
+        margin-bottom: 20px
+    &__subtext
+        margin-bottom: 20px
+    &__links
+        display: flex
+        list-style: none
+        padding: 0
+        width: 135px
+        justify-content: space-between
+    &__link
+        width: 30px
+        height: 30px
+        &:first-child
+            transform: rotate(90deg)
+        img
+            width: 100%
+            height: 100%
+.form
+    display: grid
+    min-width: 580px
+    justify-content: space-between
+    grid-row-gap: 20px
+    input, textarea
+        padding: 10px
+        &:focus
+            outline: none;
+    input
+        width: 280px;
+        height: 45px;
+        border: 1px solid #000000;
+    &__input_textarea
+        grid-column: span 2
+        position: relative
+        height: 190px;
+        border: 1px solid #000000;
+        textarea
+            width: 100%
+            height: 188px
+            border: none
+            resize: none
+        label
+            top: -5% !important
+    label
+        position: absolute;
+        top: -20%;
+        left: 20px;
+        background-color: white;
+        padding: 0px 5px 0px 5px
+        font-size: 12px
+    &__input
+        position: relative
+        

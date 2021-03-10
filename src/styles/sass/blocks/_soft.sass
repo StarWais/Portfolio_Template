@@ -1,0 +1,54 @@
+.soft
+    text-align: center
+    .line
+        margin: 20px auto 60px auto
+    &__subtitle
+        position: relative
+        +center_circle
+    &__grid
+        display: grid
+        grid-template: repeat(auto-fit, minmax(270px, auto))/repeat(auto-fit, minmax(270px, auto)) 
+        gap: 13px
+    &__levels
+        display: grid
+        margin-top: 125px
+        text-align: left
+        grid-template-columns: (repeat(auto-fit, 350px))
+        gap: 45px
+        margin-bottom: 120px
+
+.skillcard
+    width: 270px
+    height: 270px
+    border: 1px solid #000000
+    display: grid
+    grid-template-rows: 1fr 2fr
+    text-align: left
+    padding: 30px 30px 25px 30px
+    p
+        margin-top: 15px
+        font-size: 12px
+        line-height: 18px
+
+.level
+    display: flex
+    flex-direction: column
+    &__wrapper
+        display: flex
+        margin-bottom: 15px
+    &__percent
+        margin-left: auto
+    &__title
+        position: relative
+        padding-left: 14px
+        +levelcircle
+    &__line
+        height: 14px;
+        background-color: #E8E4DE;
+        border-radius: 4px
+        position: relative
+        &_progress
+            position: absolute
+            top: 0
+            height: 14px
+            z-index: 10

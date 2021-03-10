@@ -1,0 +1,37 @@
+.prices
+    margin-top: 60px
+    text-align: center
+    &__subtitle
+        position: relative
+        +center_circle
+    .line
+        margin: 20px auto 60px auto
+    .container
+        padding: 0 50px
+
+.price-block
+    display: grid
+    position: relative
+    padding-left: 25px
+    +price_circle
+    grid-template-columns: repeat(2,165px)
+    grid-template-rows: repeat(2, minmax(25px, auto))
+    &__description
+        grid-column: span 2
+        text-align: left
+    &__price
+        justify-self: end
+    &_title
+        justify-self: start
+    &__description
+        font-size: 12px
+
+.price-blocks
+    display: grid
+    grid-template-columns: repeat(auto-fit, 400px)
+    justify-content: space-between
+
+.price-block_sub
+    display: grid
+    gap: 10px
+

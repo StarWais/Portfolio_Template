@@ -1,0 +1,151 @@
+@media screen and ( max-width: 768px )
+    .container
+        width: 600px
+    .sidepanel
+        left: 30% !important
+        transform: rotate(0deg) !important
+        top: 95% !important
+    .about
+        .container
+            .about
+                &__content
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    img
+                        width: 80%
+                        height: 500px
+                &__grid
+                    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+                &__wrapper
+                    margin-left: 0
+                    margin-top: 30px
+    .third  
+        .container
+            .third
+                &__grid
+                    align-items: center
+                    justify-content: center
+                    gap: 40px
+
+    .soft
+        .container
+            .soft
+                &__levels
+                    align-items: center
+                    justify-content: center
+                    grid-template-columns: repeat(auto-fit,250px);
+
+    .portfolio
+        .container
+            .portfolio
+                &__grid
+                    align-items: center
+                    justify-content: center
+                    gap: 5px
+                    img
+                        width: 100%
+
+    .prices
+        .container
+            padding: 0 !important
+            .price-blocks
+                align-items: center
+                justify-content: center
+                gap: 40px
+
+    .formsection
+        .container
+            padding: 0 !important
+            .formsection
+                &__content
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    img
+                        width: 80%
+                        height: 500px
+                &__wrapper
+                    margin-top: 20px
+                &__link
+                    img
+                        width: 100%
+                        height: 100%
+
+
+@media screen and ( max-width: 450px )
+    .container  
+        width: 400px !important
+    .promo
+        background: url(../../images/main_bg.jpg) no-repeat 54%/cover !important
+        .container
+            .promo
+                &__title
+                    width: 100%
+                    font-size: 39px
+    .sidepanel
+        display: none !important
+
+    .about
+        .container
+            .skill
+                width: 290px
+            .about
+                &__content
+                    img
+                        height: 440px
+                        width: 400px
+                &__grid
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: center
+    .soft
+        .container
+            .soft
+                &__grid
+                    align-items: center
+                    justify-content: center
+    .portfolio
+        .container
+            .portfolio
+                &__image_4, &__image_6
+                    grid-column: span 1
+                    grid-row: span 2
+                &__grid
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    grid-template-columns: none
+                    justify-content: space-between
+                    flex-direction: column
+                    img
+                        width: 280px
+                        height: 280px
+
+    .formsection
+        .container
+            .formsection
+                &__content
+                    img
+                        display: none
+                &__wrapper
+                    width: 100%
+                &__link
+                    img
+                        display: block
+                        width: 100%
+                        height: 100%
+                &__btn
+                    margin: 50px auto 0px auto
+    .price-blocks
+        align-items: center
+        justify-content: center
+    .form
+        min-width: 100% !important
+        display: flex !important
+        flex-direction: column
+        &__input
+            input, textarea
+                width: 100% !important
+    

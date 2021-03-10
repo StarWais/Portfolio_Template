@@ -1,0 +1,73 @@
+.third
+    text-align: center
+    position: relative
+    margin-bottom: 120px
+    &__subtitle
+        +center_circle
+    .line
+        margin: 25px auto 60px auto
+    &__grid
+        text-align: left;
+        display: grid;
+        justify-content: space-between;
+        grid-template: repeat(auto-fit, minmax(410px, 1fr)) / repeat(auto-fit,minmax(400px, auto));
+    &__subtitle
+        position: relative
+
+.education
+    padding-left: 35px
+    position: relative
+    &__wrapper
+        position: relative
+        +edu_circle
+        padding-left: 56px
+        margin-top: 45px
+        margin-bottom: 12px
+    &__text, &__diploma
+        font-size: 12px
+    &__item
+        width: 375px
+        position: relative
+        &::before
+            content: ''
+            display: block
+            background: url('../../../icons/experience/university.svg') center center/cover no-repeat
+            position: absolute
+            top: 0
+            z-index: 3
+            width: 21px;
+            height: 25px;
+            transform: translateX(78%) translateY(14px)
+            
+
+.lines
+    position: absolute
+    top: 8px
+    left: 0
+.line1
+    width: 0
+    height: 343px
+    border: 1px solid #000000
+    position: absolute
+    top: 15px
+    left: 7px
+.line2
+    width: 28px;
+    height: 0px;
+    position: absolute
+    border: 1px solid #000000
+    top: 85px
+    left: 7px
+.line3
+    width: 28px;
+    height: 0px;
+    position: absolute
+    border: 1px solid #000000
+    top: 253px
+    left: 7px
+
+.circle1
+    width: 15px
+    height: 15px
+    background: $circle_color
+    border-radius: 100%

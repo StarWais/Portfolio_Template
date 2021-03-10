@@ -1,0 +1,85 @@
+@import 'variables'
+
+@mixin circle
+    &:before
+        width: 36px
+        height: 36px
+        border-radius: 100%
+        background-color: $circle_color
+        content: ''
+        display: block
+        position: absolute
+        z-index: -1
+        left: 0
+        top: -25%
+@mixin levelcircle
+    &:before
+        width: 36px
+        height: 36px
+        border-radius: 100%
+        background-color: $circle_color
+        content: ''
+        display: block
+        position: absolute
+        z-index: -1
+        left: 0
+        top: -33%
+
+@mixin about_circle
+    &:before
+        width: 36px
+        height: 36px
+        border-radius: 100%
+        background-color: $circle_color
+        content: ''
+        display: block
+        position: absolute
+        z-index: -1
+        left: 0
+@mixin center_circle
+    &:before
+        width: 36px
+        height: 36px
+        border-radius: 100%
+        background-color: $circle_color
+        content: ''
+        display: block
+        position: absolute
+        z-index: -1
+        left: 50%
+        transform: translateX(-50%) translateY(-5px)
+@mixin edu_circle
+    &:before
+        width: 36px
+        height: 36px
+        border-radius: 100%
+        background-color: $circle_color
+        content: ''
+        display: block
+        position: absolute
+        z-index: -1
+        left: 0
+@mixin price_circle
+    &:before
+        width: 15px
+        height: 15px
+        border-radius: 100%
+        background-color: $circle_color
+        content: ''
+        display: block
+        position: absolute
+        z-index: -1
+        left: 0
+        transform: translateY(25%);
+@mixin contacts_circle
+    &:before
+        width: 36px
+        height: 36px
+        border-radius: 100%
+        background-color: $circle_color
+        content: ''
+        display: block
+        position: absolute
+        z-index: -1
+        left: 0
+        transform: translateY(-13%);
